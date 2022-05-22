@@ -1,17 +1,28 @@
-class CustomMatch {
-    constructor(number){
-      this.number = number;
-    }
-    plus (a){
-      return this.number+a;
-    }
-    minus(b){
-      return this-b;
-    }
-  
+class Matchs{
+   
+  constructor(number)
+{   
+  this.number=number;
+
+
 }
- 
+plus(num){
+this.number=this. number+num;
+return this
+}
+minus(num){
+this.number=this. number-num;
+return  this
+}
+multiple(num){
+this.number=  this. number*num;
+return this
+}
+divide(num){
+ this.number=this. number/num;
+ return this
+} }
+var result = new Matchs(50).plus(6).minus(30).multiple(3).divide(2)
 
 
-var result = new CustomMatch(50).plus(30).
-console.log(result);
+console.log(result.number);
